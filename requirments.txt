@@ -1,4 +1,7 @@
-mysql-connector-python==8.0.22
+eval "$(ssh-agent -s)"Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519ssh-add -K ~/.ssh/id_ed25519mysql-connector-python==8.0.22
 numpy==1.19.5
 oauthlib==3.1.1
 opencv-python==4.5.3.56
